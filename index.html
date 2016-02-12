@@ -1,1 +1,343 @@
-Hello World
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <script>
+    var toggle = function() {
+      var mydiv = document.getElementById('newpost');
+      var mybtn = document.getElementById('showhide');
+      if (mydiv.style.display === 'block' || mydiv.style.display === '') {
+        mydiv.style.display = 'none';
+        mybtn.value = "Click to see MUCH more...";
+      } else {
+        mydiv.style.display = 'block';
+        mybtn.value = "Click to see less...";
+      }
+    }
+  </script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title>Résumé for Don Schenck</title>
+
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font: 16px Helvetica, Sans-Serif;
+      line-height: 24px;
+      background: url(images/noise.jpg);
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    #page-wrap {
+      width: 800px;
+      margin: 40px auto 60px;
+    }
+
+    #pic {
+      float: right;
+      margin: -30px 0 0 0;
+    }
+
+    h1 {
+      margin: 0 0 16px 0;
+      padding: 0 0 16px 0;
+      font-size: 42px;
+      font-weight: bold;
+      letter-spacing: -2px;
+      border-bottom: 1px solid #999;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 0 0 6px 0;
+      position: relative;
+    }
+
+    h2 span {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-style: italic;
+      font-family: Georgia, Serif;
+      font-size: 16px;
+      color: #999;
+      font-weight: normal;
+    }
+
+    p {
+      margin: 0 0 16px 0;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px dotted #999;
+    }
+
+    a:hover {
+      border-bottom-style: solid;
+      color: black;
+    }
+
+    ul {
+      margin: 0 0 32px 17px;
+    }
+
+    #objective {
+      width: 500px;
+      float: left;
+    }
+
+    #objective p {
+      font-family: Georgia, Serif;
+      font-style: italic;
+      color: #666;
+    }
+
+    dt {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: right;
+      padding: 0 26px 0 0;
+      width: 150px;
+      float: left;
+      height: 100px;
+      border-right: 1px solid #999;
+    }
+
+    dd {
+      width: 600px;
+      float: right;
+    }
+
+    dd.clear {
+      float: none;
+      margin: 0;
+      height: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="page-wrap">
+
+    <div id="contact-info" class="vcard">
+
+      <!-- Microformats! -->
+
+      <h1 class="fn">Don Schenck</h1>
+
+      <p>
+        Cell: <span class="tel">717-814-8816</span>
+        <br /> Email: <a class="email" href="mailto:don.schenck@gmail.com">don.schenck@gmail.com</a>
+      </p>
+    </div>
+
+    <div id="objective">
+      <p>
+        I am an experienced and still-curious developer slash developer advocate who loves technology, people, and the challenge of bringing those two together to make things better. Call me naïve, but I believe the best is yet come. You might say I'm a bit optimstic.
+      </p>
+    </div>
+
+    <div class="clear"></div>
+
+    <dl>
+      <dd class="clear"></dd>
+
+      <dt>Skills</dt>
+      <dd>
+        <h2>Advocacy skills</h2>
+        <p>Public speaking, writing, coding, helping customers. All done with a pleasant attitude and just enough humor</p>
+
+        <h2>Developer skills</h2>
+        <p>.NET, ASP.NET, C#, CSS, RESTful services, Docker, some Ruby, Windows, Linux (novice but learning), OpenStack, PowerShell ... really too much to list here</p>
+      </dd>
+
+      <dd class="clear"></dd>
+
+      <dt>Experience</dt>
+      <dd>
+        <h2>Rackspace <span>Developer Advocate - San Antonio - 2013-2016</span></h2>
+        <ul>
+          <li>Spoke at conferences</li>
+          <li>Helped customers by providing support</li>
+          <li>Helped customers by writing sample code</li>
+          <li>Wrote about technology</li>
+          <li>
+            <input id="showhide" type="submit" value="Click to see MUCH more..." onclick="toggle();"></input>
+          </li>
+          <div id="newpost" style="display:none">
+            <h3>Speaking</h3>
+            <p>
+              DevLink
+            </p>
+            <p>
+              Code On The Beach -- twice</p>
+            <p>
+              Philly .NET Code Camp</p>
+            <p>
+              Harrisburg Code Camp
+            </p>
+            <p>
+              Harrisburg Barcode
+            </p>
+            <p>
+              Central Pennsylvania Open Source Conference -- twice
+            </p>
+            <p>
+              CodeMash 2016
+            </p>
+            <p>
+              PowerShell Summit 2014
+            </p>
+            <p>
+              Central Penn .NET User Group
+            </p>
+            <p>
+              Tech Talk at Rackspace, Blacksburg
+            </p>
+            <p>
+              Workshop at ITT Technical Institute at Harrisburg, PA
+            </p>
+            <p>
+              All Things Open
+            </p>
+            <p>
+              Great Wide Open
+            </p>
+            <h3>Development</h3>
+            <p>
+              OpenStack.NET SDK
+            </p>
+            <p>
+              Ansible for Windows
+            </p>
+            <p>
+              PoshStack
+            </p>
+            <p>
+              PoshRack
+            </p>
+            <p>
+              Assisted with Gophercloud
+            </p>
+            <p>
+              Assisted with Carina rollout
+            </p>
+            <p>
+              Pull Request for Package Cloud (node.js)
+            </p>
+            <p>
+              Pull Request for Ruby SDK
+            </p>
+            <p>
+              Carina microservices example code
+            </p>
+            <h3>Writing</h3>
+            <p>
+              <a href="http://blog.rackspace.com/a-net-developers-guide-to-the-world-of-open-source/">A .NET Developer’s Guide To The World Of Open Source</a>
+            </p>
+            <p>
+              <a href="https://getcarina.com/blog/carina-windows-developers/">Carina for .NET developers</a>
+            </p>
+            <p>
+              <a href="http://futerrific.blogspot.com/2016/01/microservices-containers-and-docker.html">Microservices, Containers and Docker</a>
+            </p>
+            <p>
+              <a href="https://developer.rackspace.com/blog/Introducing-PoshStack-the-PowerShell-client-for-OpenStack/">Introducing PoshStack, the PowerShell client for OpenStack</a>
+            </p>
+            <p>
+              <a href="https://developer.rackspace.com/blog/rubydcamp14/">Ruby DCamp 2014 (a review)</a>
+            </p>
+            <p>
+              <a href="https://github.com/openstacknetsdk/openstack.net/wiki/Getting-Started-With-The-OpenStack-NET-SDK">Getting Started with the OpenStack SDK for Microsoft .NET</a>
+            </p>
+            <p>
+              <a href="https://developer.rackspace.com/blog/11-things/">11 Things To Remember When Writing A User Guide</a>
+            </p>
+
+            <h3>Other</h3>
+            <p>
+              Community Elite member, part of a Stevie Silver Medal winning team that provided customer support via an online community web site. I was responsible for supporting all of our SDKs, which included the following languages: PHP, Ruby, Python, .NET, Java,
+              Node.js.
+            </p>
+            <p>
+              Volunteered at rax.io (an internal conference at Rackspace)
+            </p>
+            <p>
+              Worked a booth at Cloud Open 2013
+            </p>
+            <p>
+              Volunteered at Hackathon at Rackspace
+            </p>
+            <p>
+              Multiple visits to our Blacksburg offices to assist with hacking nights for local school-aged coders
+            </p>
+            <p>
+              Assisted with recruiting, resulting in a job offer for the recruit.
+            </p>
+            <p>
+              Was a highly-rated guest on <a href="https://www.youtube.com/watch?v=u7dlGhhQ48k">Rackspace Office Hours on YouTube</a>
+            </p>
+          </div>
+        </ul>
+
+        <h2>Previous Experience <span>Developer - York, PA - 1990-2013</span></h2>
+        <ul>
+          <li>ASP.NET web development</li>
+          <li>Mobile development using RhoMobile (Ruby)</li>
+          <li>Web Services development</li>
+          <li>
+            SQL Server administration
+          </li>
+          <li>
+            Windows Network administration
+          </li>
+          <li>
+            Windows desktop development
+          </li>
+        </ul>
+      </dd>
+
+      <dd class="clear"></dd>
+
+      <dt>Education</dt>
+      <dd>
+        <h2>Penn State University/York Campus</h2>
+        <p><strong>Major:</strong> Computer Science
+          <br />
+          <strong>Minor:</strong> Math</p>
+      </dd>
+
+      <dd class="clear"></dd>
+
+      <dt>Hobbies</dt>
+      <dd>Cooking, exercise, music</dd>
+
+      <dd class="clear"></dd>
+
+      <dt>References</dt>
+      <dd>Available on request</dd>
+
+      <dd class="clear"></dd>
+    </dl>
+
+    <div class="clear"></div>
+
+  </div>
+
+</body>
+
+</html>
