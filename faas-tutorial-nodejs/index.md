@@ -214,13 +214,58 @@ Use the following command to invoke the Action (Note: '--result' can be shortene
 `wsk -i action invoke hello-openwhisk -r`
 
 ![figure8](./images/figure8.png)  
+  
+  
+## Deleting an existing Action
+Use the following command to delete the Action:
 
----
+`wsk -i action delete hello-openwhisk`
+
+ 
 ### Recap
-Up to this point, you've learned how to create and update a simple Action that returns a hard-coded string. In the next section, you'll see how to handle input parameters to your Action.  
+Up to this point, you've learned how to create, update, and delete a simple Action that returns a hard-coded string. In the next section, you'll see how to handle input parameters to your Action.  
 
 ---
 
 ## Handling Action parameters
 
+OpenWhisk Actions receive JSON objects as input. In this example, the Action 'splitter' will receive a JSON object with a comma-delimted string of words and will return a JSON object with an array of the words.
 
+For example: An input of  
+
+```JSON
+{text: "cat,blurg,apple,toothbrush"} 
+```
+will return the following:
+```JSON
+{
+    "result": [
+        "cat",
+        "blurg",
+        "apple",
+        "toothbrush"
+    ]
+}
+```
+
+Use the following command to move into the directory containing the 'splitter' code:
+
+`cd ../sequence-demo/splitter`
+
+Optional: Examine the code for the function:
+
+`cat splitter.js`
+
+Notice that the input JSON is expected to contain the property '.text', which will contain the string of comma-separated words.
+
+Create the OpenWhisk function 'splitter' using the code in file 'splitter.js'.
+
+`wsk -i action create splitter splitter.js`
+
+Use the following command test invoke the Action 'splitter' using the example, above:
+
+`wsk -i action invoke splitter -r --param text "cat,blurg,apple,toothbrush"`
+
+You should see the following results:
+
+![figure9](./images/figure9.png)
