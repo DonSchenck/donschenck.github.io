@@ -4,10 +4,7 @@
 
 layout: home
 ---
-
-    
-# FaaS Tutorial using Node.js and React
-
+   
 (C) 2018 <a href="https://developers.redhat.com">Red Hat Developer</a>
 
 This tutorial guides you to a working knowledge of how to build functions using Node.js on the open source Function as a Service (FaaS) platform <a href="https://openwhisk.apache.org/">OpenWhisk</a>.
